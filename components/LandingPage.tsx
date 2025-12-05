@@ -1,0 +1,1024 @@
+import React, { useState } from 'react';
+import { ArrowRight, ChevronDown, ChevronUp, Check, CheckCircle2, XCircle, ShieldCheck, Star, AlertTriangle } from 'lucide-react';
+
+const LandingPage: React.FC = () => {
+  return (
+    <div className="font-sans text-gray-900 bg-white selection:bg-brand-red selection:text-white">
+      
+      {/* --- HERO SECTION --- */}
+      <section className="pt-8 pb-10 bg-white border-b border-gray-100">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-6">
+          <div className="space-y-4 text-center max-w-4xl mx-auto">
+            <h1 className="text-3xl md:text-5xl font-black text-brand-red tracking-tight leading-[1.1]">
+              Cientista intestinal revela uma verdade impactante sobre as mulheres “Naturalmente Magras”
+            </h1>
+            <h2 className="text-lg md:text-2xl font-bold text-gray-800 leading-tight">
+              de metabolismo morto a comer pizza sem culpa: A História real de como 1 bactéria mudou tudo
+            </h2>
+          </div>
+
+          <div className="my-8 relative group">
+            <div className="absolute inset-0 bg-brand-red/5 rounded-2xl transform translate-x-2 translate-y-2"></div>
+            <img 
+              src="https://go.imfitgirl.com/hosted/images/a0/6e5f1695e14215a9f3f03e17ea3be0/imagen1.jpg" 
+              alt="Main" 
+              className="relative rounded-xl shadow-2xl w-full border border-gray-100"
+            />
+          </div>
+
+          <p className="text-center font-bold text-gray-700 text-lg md:text-xl bg-yellow-50 p-4 rounded-xl border border-yellow-100">
+            (Por que milhares de mulheres estão abandonando as injeções de perda de peso por esta alternativa natural sem efeitos colaterais)
+          </p>
+        </div>
+      </section>
+
+      {/* --- CONTENT BODY --- */}
+      <section className="pb-16 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-8 text-lg leading-relaxed text-gray-800">
+          
+          <h3 className="text-2xl md:text-3xl font-bold text-center text-brand-dark pt-4">
+            A “Fábrica Magra” dentro do seu intestino que as grandes farmacêuticas querem desesperadamente que você ignore
+          </h3>
+
+          <img 
+            src="https://go.imfitgirl.com/hosted/images/1c/e0fa6a1ca2467e9d78e410742724dd/49.jpg" 
+            alt="Pharma" 
+            className="rounded-xl shadow-lg w-full mb-6"
+          />
+
+          <p>Se você tem visto aquelas transformações de celebridades no Instagram…</p>
+          <p>Vendo estrelas perderem mais de 23 kg com aquelas injeções da moda para emagrecer…</p>
+          <p>E se perguntado por que VOCÊ não pode comer uma fatia de pão sem ganhar 1,5 kg da noite para o dia...</p>
+          
+          <div className="border-l-4 border-brand-red pl-5 py-3 my-6 bg-red-50 rounded-r-lg">
+            <p className="font-bold text-xl text-brand-dark">O que estou prestes a revelar vai te impactar.</p>
+          </div>
+
+          <p>Você não tem um problema de força de vontade.</p>
+          <p>Você não tem um “metabolismo lento” porque está ficando mais velha.</p>
+          <p>E definitivamente você não precisa se injetar com hormônios caros que já estão causando mais de 1.800 processos judiciais.¹</p>
+
+          <div className="bg-red-50 p-6 rounded-xl border border-red-100 text-center shadow-sm">
+            <p className="font-bold text-xl text-brand-red mb-2">É algo muito mais simples…</p>
+            <p className="font-bold text-xl text-gray-800">A sua “fábrica magra” natural foi desligada.</p>
+          </div>
+
+          <div className="my-8">
+            <img 
+              src="https://go.imfitgirl.com/hosted/images/75/93bd363b644672bf8dcc29e0852b25/50.jpg" 
+              alt="Comparison" 
+              className="rounded-xl shadow-lg w-full"
+            />
+          </div>
+
+          <p>Veja, aquelas mulheres naturalmente magras que você sempre invejou — as que comem massa no almoço e perdem peso até a hora do jantar…</p>
+          
+          <div className="space-y-3 pl-2">
+            <div className="flex items-start gap-3 bg-white p-4 rounded-lg shadow-sm border border-gray-200">
+              <XCircle className="text-red-500 mt-1 shrink-0" size={20} />
+              <p className="font-medium">Não são geneticamente superiores.</p>
+            </div>
+            <div className="flex items-start gap-3 bg-white p-4 rounded-lg shadow-sm border border-gray-200">
+              <XCircle className="text-red-500 mt-1 shrink-0" size={20} />
+              <p className="font-medium">Não foram abençoadas com mais força de vontade.</p>
+            </div>
+          </div>
+
+          <p>Elas têm algo no intestino que você perdeu.</p>
+          <p>E sem isso, você NUNCA poderá comer carboidratos sem armazená-los como gordura.</p>
+          <p>Não importa o quão perfeitamente você conte calorias.</p>
+          <p>Não importa quantas horas passe na academia.</p>
+          <p>Não importa quantas dietas da moda tente.</p>
+          <p className="font-bold bg-yellow-50 p-2 inline-block rounded">Porque a fábrica de queima de gordura do seu corpo está literalmente desconectada.</p>
+
+          {/* STORY */}
+          <div className="pt-8 space-y-6">
+            <p className="font-bold text-2xl text-center md:text-left">Meu nome é Suelen Costa.</p>
+            
+            <div className="relative inline-block w-full md:w-2/3 mx-auto block text-center">
+              <div className="relative">
+                 <div className="absolute inset-0 bg-gray-200 rounded-2xl transform rotate-1"></div>
+                 <img 
+                    src="https://i.imgur.com/4jXf9sP.jpeg" 
+                    alt="Suelen Costa" 
+                    className="relative rounded-2xl shadow-xl w-full border-4 border-white mx-auto"
+                 />
+              </div>
+            </div>
+
+            <p>E não vou mentir…</p>
+            <p>Cinco anos atrás eu achava que tinha descoberto todos os segredos para emagrecer.</p>
+            <p>Depois de perder 23 kg em 90 dias…</p>
+            <p>Depois de ajudar mais de 100.000 mulheres a transformarem seus corpos…</p>
+            <p>Depois de escrever livros bestseller e aparecer na Univisión, Telemundo e CNN…</p>
+            <p>Eu achava que sabia de tudo.</p>
+            <p>E eu admito… eu estava completamente errada…</p>
+
+            <img 
+              src="https://go.imfitgirl.com/hosted/images/c5/0c9a2a9def4a9eb15b7a4f54fdf0ea/44.jpg" 
+              alt="Sad Suelen" 
+              className="rounded-xl shadow-lg w-full my-6"
+            />
+
+            <p>Veja, após entrar na menopausa, desenvolvi uma voz constante na minha cabeça que me atormentava toda vez que eu comia.</p>
+            
+            <div className="bg-gray-50 p-6 rounded-xl italic text-gray-600 border-l-4 border-gray-400 font-medium shadow-sm">
+              <p className="mb-2">“Tenha cuidado com essa fatia de pão.”</p>
+              <p className="mb-2">“Não exagere no jantar.”</p>
+              <p>“Isso vai te custar depois.”</p>
+            </div>
+
+            <p>Mesmo nas férias, eu não conseguia relaxar completamente.</p>
+            <p>Sempre calculando. Sempre preocupada. Sempre me sentindo culpada.</p>
+            <p>Eu achei que essa era minha nova realidade.</p>
+            <p>Que depois da menopausa, todas as mulheres estavam sentenciadas a viver como prisioneiras do próprio metabolismo.</p>
+            <p>Até aquele dia de verão em Paris que mudou tudo o que eu acreditava saber sobre por que algumas mulheres permanecem magras sem esforço…</p>
+            <p>Enquanto outras lutamos com cada quilo.</p>
+            <p>Tudo começou no verão de 2023 durante uma viagem a Paris com meu marido Anderson.</p>
+            <p>Era nosso terceiro dia quando vi algo</p>
+            <p>que me deixou obcecada por meses.</p>
+            <p>Estávamos sentados em um café perto da Torre Eiffel.</p>
+
+            <img 
+              src="https://go.imfitgirl.com/hosted/images/e0/bf92eb563f4b3dbebbdb1fb7f9983b/46.jpg" 
+              alt="Paris Cafe" 
+              className="rounded-xl shadow-lg w-full my-6"
+            />
+
+            <p>E eu, como sempre, tinha pedido uma pequena salada.</p>
+            <p>Nem pão, nem sobremesa, nem nada “perigoso.”</p>
+            <p>Mas na mesa ao lado havia duas mulheres francesas claramente mais velhas que eu...</p>
+            <p>Uma loira devorou um croissant enorme com manteiga, quiche Lorraine com batatas e profiteroles com sorvete.</p>
+            <p>A morena não ficou atrás: pasta carbonara, pão com manteiga, vinho branco e crème brûlée.</p>
+
+            <img 
+              src="https://go.imfitgirl.com/hosted/images/f4/ebc72477d341cda3b24fa1ac4d01f6/47.jpg" 
+              alt="Eating women" 
+              className="rounded-xl shadow-lg w-full my-6"
+            />
+
+            <p>Enquanto isso, eu estava ali com minha salada de 300 calorias…</p>
+            <p>Calculando mentalmente cada folha de alface.</p>
+            <p>E por outro lado essas mulheres não tinham nem um pingo de culpa no rosto.</p>
+            <p>Não estavam calculando calorias.</p>
+            <p>Não se desculpavam por suas escolhas.</p>
+            <p>Simplesmente desfrutavam cada mordida com uma liberdade que eu tinha perdido completamente depois da menopausa.</p>
+            <p>E o mais impactante de tudo…</p>
+            <p className="font-bold text-xl text-brand-dark">Elas eram MAGRAS.</p>
+            <p>Não “magras para a idade”… MAGRAS de verdade.</p>
+            <p>Jeff me viu olhando e riu. “Amor, para de encarar elas assim,” ele disse.</p>
+            <p>Mas eu não conseguia.</p>
+            <p>Porque depois de anos acreditando que a menopausa tinha me “sentenciado” a uma vida de restrições…</p>
+            <p>Ali estava a prova viva de que isso era mentira.</p>
+            <p>Como era possível?</p>
+            <p>Como essas mulheres claramente pós-menopausa podiam comer 3.000 calorias de uma só vez e parecer daquele jeito?</p>
+            <p>Enquanto eu, com minhas 1.200 calorias cuidadosamente calculadas, tinha que lutar por cada quilo?</p>
+            <p>O que eu estava vendo desafiava tudo o que eu sabia.</p>
+            <p>Então fiz o que sempre faço quando algo não faz sentido.</p>
+            <p>Me obsessei em encontrar a resposta.</p>
+            <p>E o que descobri me obrigou a admitir que eu tinha ignorado a parte mais importante por anos.</p>
+          </div>
+
+          {/* MECHANISM */}
+          <div className="pt-12 space-y-6">
+            <h3 className="text-2xl md:text-3xl font-black text-center text-brand-dark leading-tight">
+              Por que seu Metabolismo “quebrado” não está quebrado… ele simplesmente foi desligado (e como você pode reativá-lo)
+            </h3>
+
+            <div className="p-1 bg-gradient-to-r from-emerald-400 to-teal-500 rounded-xl shadow-lg">
+                <img 
+                src="https://go.imfitgirl.com/hosted/images/ed/48dfa4a0e146f686cd7c6db18aebcc/1.jpg" 
+                alt="Metabolism Switch" 
+                className="rounded-lg w-full bg-white"
+                />
+            </div>
+
+            <p>Aqui está o que essas clínicas caras de perda de peso não querem que você saiba…</p>
+            <p>A verdadeira razão pela qual você engorda com carboidratos enquanto suas amigas naturalmente magras não engordam não tem nada a ver com genética.</p>
+            <p>É porque elas têm uma fábrica ativa de GLP-1 no intestino… e a sua está adormecida.</p>
+            <p>Deixe-me explicar…</p>
+            
+            <div className="bg-white p-6 rounded-xl shadow-md border border-emerald-100 relative overflow-hidden">
+                <div className="absolute top-0 left-0 w-2 h-full bg-brand-green"></div>
+                <p className="relative z-10">Dentro dos intestinos de cada mulher naturalmente magra vive uma bactéria especial chamada <span className="font-bold text-brand-green">Akkermansia muciniphila</span>.²</p>
+                <p className="mt-4 relative z-10">Pense nela como uma microfábrica farmacêutica, trabalhando 24 horas por dia produzindo GLP-1 — exatamente o mesmo hormônio que</p>
+                <p className="mt-4 font-bold text-brand-dark relative z-10">Essas injeções de R$ 3000,00 tentam substituir artificialmente.</p>
+            </div>
+
+            <img 
+              src="https://go.imfitgirl.com/hosted/images/2c/95768c689c4f28b71d64209608ae4d/5inyeccion-glp.jpg" 
+              alt="Injection" 
+              className="rounded-xl shadow-lg w-full my-6"
+            />
+
+            <p>Quando essas mulheres comem pizza, massa ou até sobremesa, isso acontece:</p>
+            <ul className="space-y-3 pl-2">
+              {[
+                "A bactéria Akkermansia começa imediatamente a produzir GLP-1",
+                "O açúcar no sangue se mantém perfeitamente estável",
+                "A insulina funciona como uma máquina de precisão",
+                "Todos esses carboidratos viram energia, não gordura abdominal"
+              ].map((item, idx) => (
+                <li key={idx} className="flex items-start gap-3">
+                  <CheckCircle2 className="text-brand-green mt-1 shrink-0" size={24} />
+                  <span className="font-medium text-gray-800">{item}</span>
+                </li>
+              ))}
+            </ul>
+
+            <p>Enquanto isso, mulheres como você e eu têm quase ZERO Akkermansia ativa.</p>
+            <p>Por isso a mesma fatia de pizza que deixa sua amiga magra energizada… te faz engordar e se sentir culpada.</p>
+            <p>Literalmente: não é sua culpa.</p>
+            <div className="bg-brand-green/10 p-4 rounded-xl text-center border border-brand-green/20">
+                <p className="font-bold text-brand-green text-xl">Sua fábrica de bactéria magra só precisa ser ligada novamente.</p>
+            </div>
+          </div>
+
+          {/* STUDY */}
+          <div className="pt-12 space-y-6">
+            <div className="bg-brand-dark text-white p-8 rounded-2xl shadow-xl transform -rotate-1 mx-2">
+                <h3 className="text-xl md:text-2xl font-bold text-center leading-tight">
+                Estudo Universitário Demonstra Que Você Pode “Instalar” Literalmente Um “Metabolismo Magro” No Seu Intestino Em Até 2000% e… Sem Agulhas!³
+                </h3>
+            </div>
+
+            <p>E aqui é onde a história fica incrível…</p>
+            <p>Pesquisadores da Universidade de Helsinque fizeram uma descoberta que muda tudo o que pensávamos saber sobre metabolismo.</p>
+
+            <img 
+              src="https://go.imfitgirl.com/hosted/images/af/25016f8e034d7ca562f22c2607d5f3/51.jpg" 
+              alt="Scientists" 
+              className="rounded-xl shadow-lg w-full"
+            />
+
+            <p>Eles descobriram que você pode literalmente “instalar” essas bactérias que queimam gordura de volta no seu intestino.</p>
+            <p>Mesmo que tenham desaparecido por anos.</p>
+            <p>Mesmo que seu metabolismo tenha parecido “quebrado” por décadas.</p>
+            <p>Em seu estudo revolucionário, mulheres que receberam a combinação correta de Akkermansia e compostos específicos para alimentá-la viram sua produção natural de GLP-1 aumentar mais de 2000% em apenas 12 semanas.</p>
+
+            <img 
+              src="https://go.imfitgirl.com/hosted/images/d5/131c31cff84a0898125ed5248c408f/2.jpg" 
+              alt="Graph" 
+              className="rounded-xl shadow-lg w-full p-2 bg-white border border-gray-100"
+            />
+
+            <p className="font-black text-4xl text-brand-red text-center py-2">Dois mil por cento!</p>
+            <p>Isso é um aumento de 20 vezes na produção da sua própria hormona natural de queima de gordura.</p>
+            <p>De repente, essas mulheres podiam:</p>
+            
+            <div className="grid gap-3">
+              {[
+                "Comer carboidratos sem ganho imediato de peso",
+                "Sentir-se naturalmente satisfeitas com porções normais",
+                "Ver seus níveis de energia dispararem",
+                "Ver a gordura abdominal começar a derreter"
+              ].map((item, idx) => (
+                <div key={idx} className="flex items-center gap-3 bg-emerald-50 p-4 rounded-xl border border-emerald-100">
+                  <Star className="text-brand-green fill-brand-green shrink-0" size={20} />
+                  <span className="font-bold text-gray-800">{item}</span>
+                </div>
+              ))}
+            </div>
+
+            <p>Tudo porque reativaram a fábrica natural de GLP-1 do corpo.</p>
+            <p>E não, não são necessárias injeções semanais.</p>
+            <p>Não há custos de medicamentos de R$ 15.000 por ano.</p>
+            <p>Não há arrotos de ovo podre ou paralisia estomacal.</p>
+            <p>Apenas o próprio corpo funcionando como deveria.</p>
+
+            <h3 className="text-2xl font-bold text-center text-brand-dark pt-8 border-t border-gray-100 mt-8">
+                Resultados de Laboratório Vazados: Como Uma Cepa Bacteriana Superou Injeções de R$ 15.000… Naturalmente
+            </h3>
+
+            <img 
+                src="https://go.imfitgirl.com/hosted/images/fc/cd87638a90480ab66fe6e7fad66653/3.jpg" 
+                alt="Lab" 
+                className="rounded-xl shadow-lg w-full mb-6"
+            />
+
+            <p>Quando os cientistas viram esses resultados pela primeira vez, acharam que o equipamento estava com defeito.</p>
+            <p>Eles tinham acabado de descobrir que uma cepa específica de bactéria podia aumentar a produção natural de GLP-1 em mais de 2000%.</p>
+            <p>Isso é equivalente às injeções farmacêuticas mais potentes… mas produzido naturalmente pelo seu próprio intestino.</p>
+            <p>Os pesquisadores ficaram tão impressionados que repetiram o estudo três vezes.</p>
+            <p>Cada vez: o mesmo resultado incrível.</p>
+            <p>Essa bactéria literalmente transforma seus intestinos em uma fábrica de GLP-1.</p>
+            <p>Aqui estão os dados publicados que estão causando tanto alvoroço na comunidade científica:</p>
+            
+            <ul className="space-y-3 pl-2 bg-gray-50 p-6 rounded-xl border border-gray-100">
+            {[
+                "Aumento de mais de 2000% na produção natural de GLP-1⁵",
+                "Resultados comparáveis a injeções farmacêuticas",
+                "Zero efeitos colaterais relatados",
+                "Resultados mantidos mesmo após parar a suplementação"
+            ].map((item, idx) => (
+                <li key={idx} className="flex items-start gap-3">
+                    <Check className="text-brand-dark mt-1 shrink-0" size={20} />
+                <span className="text-gray-900 font-medium">{item}</span>
+                </li>
+            ))}
+            </ul>
+
+            <p>O pesquisador principal, Dr. Patrice Cani, chamou isso praticamente de a descoberta metabólica mais significativa em décadas.</p>
+            <p>E o mais notável…</p>
+            <p>Essa não é uma bactéria rara ou exótica.</p>
+            <p>Akkermansia muciniphila existe naturalmente em todo intestino humano saudável.⁷</p>
+            <p>Você NASCEU com essa vantagem de queima de gordura.</p>
+            <p>Apenas a perdeu ao longo do tempo devido ao estresse, comidas processadas, antibióticos e envelhecimento.</p>
+            <p>As boas notícias?</p>
+            <p>Você pode recuperá-la.</p>
+          </div>
+
+          {/* SCANDAL */}
+          <div className="pt-12 space-y-6">
+            <h3 className="text-2xl md:text-3xl font-bold text-center text-brand-dark">
+                O Escândalo da Ação Judicial de 2 Bilhões de Dólares Que as Injeções Para Emagrecer Não Querem Que Você Veja
+            </h3>
+
+            <img 
+                src="https://go.imfitgirl.com/hosted/images/d5/281dc5e6de4ce5868061d500d7693e/23.jpg" 
+                alt="Scandal" 
+                className="rounded-xl shadow-lg w-full mix-blend-multiply"
+            />
+
+            <p>“Se GLP-1 é tão importante, por que não simplesmente usar essas injeções de que todos falam?”</p>
+            <p>E eu entendo por que você pensaria isso.</p>
+            <p>Essas injeções estão por toda parte nas redes sociais.</p>
+            <p>Celebridades juram por elas.</p>
+            <p>Os resultados podem ser dramáticos.</p>
+            <p>Mas aqui está o que NÃO te contam…</p>
+            <p>Primeiro: custam mais de R$ 1.000 por mês.</p>
+            <p>A maioria dos seguros não cobre para emagrecimento.</p>
+            <p>Isso significa mais de R$ 12.000 por ano só para continuar usando.</p>
+            <p>Segundo: você precisa se injetar na barriga toda semana.</p>
+            <p>Para sempre.</p>
+
+            <img 
+                src="https://go.imfitgirl.com/hosted/images/bd/9847d62dc54120bead4d6749628518/25.jpg" 
+                alt="Injections" 
+                className="rounded-xl shadow-lg w-full mix-blend-multiply"
+            />
+
+            <p>Porque quando você para, o peso volta imediatamente.</p>
+            <p>Terceiro — e essa é a parte assustadora…</p>
+            
+            <div className="bg-red-100 p-6 rounded-xl border-l-4 border-red-600 text-red-900 shadow-sm">
+                <div className="flex gap-2 items-center mb-2">
+                    <AlertTriangle className="text-red-600" />
+                    <span className="font-bold text-lg">EFEITOS COLATERAIS</span>
+                </div>
+                <p>Essas injeções têm efeitos colaterais horríveis que ninguém comenta.⁷</p>
+                <p className="mt-2">Estamos falando de náuseas tão severas que algumas pessoas não conseguem manter comida.</p>
+                <p className="mt-2">Vômitos tão violentos que alguns perderam dentes.</p>
+            </div>
+
+            <p>Alguma coisa chamada “arroto de Ozempic”, onde você arrota um cheiro de ovo podre que esvazia salas inteiras.⁸</p>
+            <p>E em alguns casos: paralisia estomacal permanente.</p>
+            <p>Até agora, mais de 1.800 processos foram movidos contra os fabricantes dessas injeções.⁹</p>
+            <p>Com danos potenciais que ultrapassam 2 bilhões de dólares.</p>
+            <p>Pessoas estão processando porque desenvolveram gastroparesia — paralisia permanente do estômago.</p>
+            <p>Outros sofreram perda súbita da visão.</p>
+            <p>Alguns desenvolveram pancreatite ou doenças da vesícula biliar.</p>
+            <p>Tudo isso tentando aumentar artificialmente seus níveis de GLP-1.</p>
+            <p>Mas aqui está a parte realmente louca…</p>
+            <p className="font-bold text-xl text-center text-brand-dark">O seu corpo já sabe como produzir GLP-1 naturalmente.</p>
+
+            <img 
+                src="https://go.imfitgirl.com/hosted/images/5e/2d540dc46d43e7873680e31356e879/5.jpg" 
+                alt="Natural" 
+                className="rounded-xl shadow-lg w-full mix-blend-multiply"
+            />
+
+            <p>Você só precisa reativar a bactéria que faz isso.</p>
+            <p>E quando você faz isso de forma natural, através do intestino…</p>
+            
+            <ul className="grid sm:grid-cols-2 gap-4">
+               {[
+                 "Sem efeitos colaterais",
+                 "Sem injeções semanais",
+                 "Sem contas de R$ 1.000 por mês",
+                 "Sem risco de danos permanentes aos órgãos"
+               ].map((item, idx) => (
+                 <li key={idx} className="flex items-center gap-2 bg-white p-4 rounded-lg shadow-sm border border-emerald-100">
+                   <Check className="text-brand-green" size={20} />
+                   <span className="font-bold text-gray-800 text-sm">{item}</span>
+                 </li>
+               ))}
+            </ul>
+
+            <p>Apenas o corpo fazendo o que foi projetado para fazer.</p>
+          </div>
+
+          {/* SOLUTION REVEAL */}
+          <div className="pt-12 space-y-6">
+            <h3 className="text-2xl md:text-3xl font-black text-center text-brand-dark">
+              Como Instalar Sua Própria Fábrica de GLP-1 Com Esta Atualização de Software Metabólico em 4 Etapas
+            </h3>
+
+            <p>Depois de estudar a pesquisa de Helsinque por meses…</p>
+            <p>E testar mais de 300 combinações diferentes…</p>
+            <p>Minha equipe de microbiologistas e eu finalmente quebramos o código.</p>
+            <p>Descobrimos a fórmula exata necessária para “instalar” uma colônia próspera de Akkermansia no intestino de qualquer mulher.</p>
+            <p>Chamamos de IM GLP Reset, a primeira e única fórmula que contém:</p>
+            
+            <div className="bg-emerald-50 p-6 rounded-2xl border border-emerald-100 space-y-4 shadow-sm">
+                <p>🔬 <span className="font-bold text-gray-900">Akkermansia muciniphila de grau farmacêutico</span> — a bactéria exata que produz GLP-1 natural</p>
+                <p>🔬 <span className="font-bold text-gray-900">11 nutrientes sinérgicos</span> — especialmente selecionados para alimentar e proteger sua nova colônia</p>
+                <p>🔬 <span className="font-bold text-gray-900">Compostos de ativação</span> — que “acordam” a bactéria adormecida que você ainda tem</p>
+            </div>
+
+            <div className="transform hover:scale-[1.01] transition-transform duration-500">
+              <img 
+                  src="https://go.imfitgirl.com/hosted/images/50/7a456814174e88a3a307ba0fbfeb0b/vertical-portrait-of-young-beautiful-fitness-woman-2025-03-10-20-56-01-utc.jpg" 
+                  alt="Product" 
+                  className="rounded-2xl shadow-2xl w-full"
+              />
+            </div>
+
+            <p className="font-medium">E o melhor…</p>
+            <p>Você não precisa mudar NADA na sua rotina.</p>
+            
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-sm md:text-base font-medium text-gray-600">
+                <div className="bg-gray-100 p-3 rounded-lg text-center flex items-center justify-center">Nenhuma dieta especial</div>
+                <div className="bg-gray-100 p-3 rounded-lg text-center flex items-center justify-center">Nenhum exercício adicional</div>
+                <div className="bg-gray-100 p-3 rounded-lg text-center flex items-center justify-center">Nenhuma refeição preparada</div>
+                <div className="bg-gray-100 p-3 rounded-lg text-center flex items-center justify-center">Nenhuma agenda complicada</div>
+            </div>
+            
+            <div className="py-4 text-center">
+                <p className="font-black text-xl md:text-2xl text-brand-dark">LITERALMENTE é UMA RECEITA SIMPLES PARA FAZER TODA MANHÃ.</p>
+                <p className="text-gray-500 mt-2">30 segundos do seu dia.</p>
+            </div>
+
+            <p>Contém 11 ingredientes precisamente balanceados que trabalham juntos para:</p>
+            
+            <div className="space-y-6 mt-6">
+                <div className="bg-orange-50 p-6 rounded-2xl border-l-8 border-orange-400 shadow-sm">
+                    <p className="font-black text-lg text-orange-800 mb-3 uppercase tracking-wide">🔥 PASSO 1: PREPARAR O AMBIENTE</p>
+                    <ul className="list-disc pl-5 space-y-2 text-gray-800 font-medium">
+                        <li>Extrato de mangostão cria o “solo” perfeito para bactérias benéficas</li>
+                        <li>Extrato de figo-da-índia protege probióticos delicados durante o trânsito estomacal</li>
+                    </ul>
+                </div>
+
+                <div className="bg-blue-50 p-6 rounded-2xl border-l-8 border-blue-400 shadow-sm">
+                    <p className="font-black text-lg text-blue-800 mb-3 uppercase tracking-wide">☑️ PASSO 2: INSTALAR A BACTÉRIA</p>
+                    <ul className="list-disc pl-5 space-y-2 text-gray-800 font-medium">
+                        <li>Akkermansia muciniphila</li>
+                        <li>Bifidobacterium breve (funciona sinergicamente)</li>
+                    </ul>
+                </div>
+
+                <div className="bg-purple-50 p-6 rounded-2xl border-l-8 border-purple-400 shadow-sm">
+                    <p className="font-black text-lg text-purple-800 mb-3 uppercase tracking-wide">🗣️ PASSO 3: ALIMENTAR A COLÔNIA</p>
+                    <ul className="list-disc pl-5 space-y-2 text-gray-800 font-medium">
+                        <li>Fibra de konjac como super alimento</li>
+                        <li>Compostos prebióticos para sobrevivência prolongada</li>
+                    </ul>
+                </div>
+
+                <div className="bg-emerald-50 p-6 rounded-2xl border-l-8 border-emerald-500 shadow-sm">
+                    <p className="font-black text-lg text-emerald-800 mb-3 uppercase tracking-wide">👍 PASSO 4: OTIMIZAR A PRODUÇÃO</p>
+                    <ul className="list-disc pl-5 space-y-2 text-gray-800 font-medium">
+                        <li>Casca de canela + Berberina criam condições ideais de produção de GLP-1</li>
+                        <li>Cúrcuma + Resveratrol maximizam a sensibilidade à insulina</li>
+                        <li>Ácido Alfa-Lipóico + Riboflavina otimizam a produção de energia celular</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div className="text-center pt-8">
+                <p className="font-bold text-2xl text-brand-dark mb-4">O Resultado?</p>
+                <div className="space-y-2 inline-block text-left">
+                    <p className="flex items-center gap-2"><CheckCircle2 className="text-brand-green" size={20}/> Em horas, as novas colônias começam a se estabelecer.</p>
+                    <p className="flex items-center gap-2"><CheckCircle2 className="text-brand-green" size={20}/> Em dias, a produção de GLP-1 começa a aumentar.</p>
+                    <p className="flex items-center gap-2"><CheckCircle2 className="text-brand-green" size={20}/> Em semanas, seu metabolismo funciona como o das mulheres naturalmente magras que você sempre invejou.</p>
+                </div>
+            </div>
+          </div>
+
+          {/* LIFESTYLE */}
+          <div className="pt-12 space-y-6">
+            <img 
+                src="https://go.imfitgirl.com/hosted/images/bf/9bb04b85854dc883a55de24271b398/54.jpg" 
+                alt="Lifestyle" 
+                className="rounded-xl shadow-lg w-full mix-blend-multiply"
+            />
+
+            <p>E tudo isso enquanto:</p>
+            
+            <ul className="grid sm:grid-cols-2 gap-3">
+               {[
+                 "Continua comendo em restaurantes",
+                 "Continua aproveitando ocasiões especiais",
+                 "Continua indo na igreja",
+                 "Mantém o mesmo horário de trabalho",
+                 "Dorme as mesmas horas",
+                 "Faz (ou não faz) os mesmos exercícios"
+               ].map((item, idx) => (
+                 <li key={idx} className="flex items-center gap-2 bg-white px-3 py-3 rounded-lg border border-gray-200 shadow-sm">
+                   <CheckCircle2 className="text-brand-green shrink-0" size={20} />
+                   <span className="font-medium">{item}</span>
+                 </li>
+               ))}
+            </ul>
+
+            <div className="bg-white p-8 rounded-2xl shadow-md border border-gray-200 mt-8 text-center">
+                <p className="text-xl md:text-2xl font-medium mb-2">É como ter uma injeção de GLP-1 de <span className="font-black text-brand-red">R$ 3000,00</span>…</p>
+                <p className="text-gray-600">Exceto que seu corpo produz naturalmente.</p>
+                <p className="font-bold text-gray-800">E você nunca tem que se injetar.</p>
+            </div>
+          </div>
+
+          {/* VISUALIZATION */}
+          <div className="pt-12 space-y-6">
+            <h3 className="text-2xl font-bold text-center text-brand-dark">
+                Como Sua “Fábrica Magra” Reativada Converte Cada Carboidrato em Energia Pura (Em Vez De Gordura)
+            </h3>
+
+            <img 
+                src="https://go.imfitgirl.com/hosted/images/af/de1e9c22894d52a5e8f5ed0f2c8766/7.jpg" 
+                alt="Visualization" 
+                className="rounded-xl shadow-lg w-full"
+            />
+
+            <p>Imagine isto…</p>
+            <p>É sábado de manhã, três meses a partir de agora.</p>
+            <p>Você acorda e sobe na balança.</p>
+            <p>O número é 12 kg menor que hoje.</p>
+            <p>Você coloca aquele jeans que estava pendurado no armário há anos — comprado “para quando eu emagrecer”.</p>
+            <p>Ele serve perfeitamente.</p>
+            <p>Você vai almoçar com suas amigas e pede o que REALMENTE quer.</p>
+            <p>Bife com batatas fritas. Até um sorvete com calda de chocolate.</p>
+            <p>E você não sente culpa por nada.</p>
+            <p>Porque sua fábrica de GLP-1 recém-ativada está lidando com cada carboidrato como uma máquina de precisão.</p>
+            <p>Transformando tudo em energia, não gordura.</p>
+            <p>Suas amigas perguntam seu “segredo”.</p>
+            <p>Você apenas sorri.</p>
+            <p>Porque agora você tem a mesma vantagem metabólica com a qual elas nasceram.</p>
+            <p>À noite, você se arruma para jantar com seu parceiro.</p>
+            <p>Você olha no espelho e realmente gosta do que vê.</p>
+            <p>Sua cintura está menor. Sua energia mais alta.</p>
+
+            <img 
+                src="https://go.imfitgirl.com/hosted/images/48/64b66eaaee41909bafa457ab36295e/56.jpg" 
+                alt="Happy Woman" 
+                className="rounded-xl shadow-lg w-full"
+            />
+
+            <p>Sua confiança lá em cima.</p>
+            <p>Seu parceiro nota também.</p>
+            <p>“Você está incrível,” ele diz. “O que mudou?”</p>
+            <p>Tudo mudou.</p>
+            <p>Você não está mais em guerra com seu metabolismo.</p>
+            <p>Não tem mais medo de carboidratos.</p>
+            <p>Não está mais contando cada caloria.</p>
+            <p>Finalmente tem o corpo — e a liberdade — que sempre quis.</p>
+            <p>Isso não é fantasia.</p>
+            <p>Isso é o que acontece quando sua fábrica natural de GLP-1 volta a funcionar.</p>
+            <p className="font-bold text-brand-green text-xl text-center">E isso pode começar HOJE.</p>
+          </div>
+
+          {/* FEAR */}
+          <div className="pt-12 space-y-6">
+            <h3 className="text-2xl font-bold text-center text-brand-dark">
+                O Erro de R$22.000 Que Mantém Milhares de Pessoas Presas No Inferno das Dietas Infinitas
+            </h3>
+
+            <img 
+                src="https://go.imfitgirl.com/hosted/images/4e/6f70f467d64bb9aefa313cd0dc4619/57.jpg" 
+                alt="Sad" 
+                className="rounded-xl shadow-lg w-full"
+            />
+
+            <p>Agora vou ser brutalmente honesta sobre o que acontece se você não tomar ação hoje.</p>
+            <p>Seis meses a partir de agora, você estará exatamente no mesmo lugar.</p>
+            <p>Ainda lutando com as mesmas 20, 30 ou 50 kg.</p>
+            <p>Ainda se sentindo culpada cada vez que come pão.</p>
+            <p>Ainda vendo mulheres naturalmente magras aproveitando a vida enquanto você se restringe e sofre.</p>
+            <p>E piora a cada ano.</p>
+            <p>Depois dos 40, seus níveis de Akkermansia caem ainda mais.</p>
+            <p>Sua resistência à insulina aumenta.</p>
+            <p>Seu metabolismo desacelera.</p>
+            <p>O que parece difícil hoje se torna quase impossível amanhã.</p>
+            <p>Pense no dinheiro desperdiçado em programas que não atacam a causa:</p>
+
+            <img 
+                src="https://go.imfitgirl.com/hosted/images/55/cc59d6cab042589b8706ca41b90ac5/59.jpg" 
+                alt="Wasted Money" 
+                className="rounded-xl shadow-lg w-full"
+            />
+
+            <ul className="space-y-3 pl-4 border-l-4 border-gray-300 ml-4">
+               <li>• Outros R$ 3.000 no médico focando em pontos em vez de bactérias</li>
+               <li>• Outros R$ 2.400 em academias que você mal frequenta</li>
+               <li>• Outros R$ 1.500 em suplementos sem as cepas corretas</li>
+               <li>• Talvez até R$ 15.000 nessas injeções perigosas</li>
+            </ul>
+            <p className="font-bold text-red-600 text-xl text-center py-2">Isso é mais de R$ 20.000 gastos… sem resultado.</p>
+            <p>E isso nem é a pior parte.</p>
+            <p>A pior parte é ver sua confiança encolher.</p>
+            <p>Evitar eventos sociais.</p>
+            <p>Sentir-se invisível.</p>
+            <p>Ver sua relação sofrer porque você não se sente atraente.</p>
+            <p>Perder momentos da VIDA porque está presa em um corpo que não parece seu.</p>
+            <p>Seus filhos e netos te lembrarem sempre “de dieta” em vez de curtindo a vida com eles.</p>
+            <p>É esse o legado que quer deixar?</p>
+            <p>Ou quer ser a mulher que descobriu o segredo?</p>
+            <p>A que finalmente dominou o código da perda de peso sem esforço?</p>
+            <p>A escolha é sua.</p>
+            <p>Mas precisa ser feita hoje.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* --- OFFER SECTION (BONUSES FIRST) --- */}
+      <section className="py-16 bg-gradient-to-br from-white to-gray-100 border-t border-gray-200">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-8">
+          <h3 className="text-3xl font-black text-center text-brand-dark mb-10">
+            Tudo O Que Você Precisa Para “Instalar” Um Metabolismo Naturalmente Magro
+          </h3>
+
+          <p className="text-lg text-center">Aqui está o que você recebe ao reativar sua fábrica de GLP-1 hoje:</p>
+          
+          {/* BONUSES */}
+          <div className="space-y-6">
+            <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex items-center gap-2 mb-2">
+                 <span className="bg-brand-green text-white text-[10px] uppercase font-bold px-2 py-1 rounded tracking-wide">BÔNUS GRÁTIS</span>
+              </div>
+              <p className="font-bold text-xl text-brand-dark">🎁 Bônus #1 — Guia anti-inchaço de 7 dias</p>
+              <p className="text-gray-600 mt-2">O protocolo rápido para eliminar retenção de líquidos e barriga estufada em menos de 1 semana.</p>
+              <p className="font-bold text-sm text-gray-800 mt-3">Inclui:</p>
+              <ul className="list-disc pl-5 text-gray-600 text-sm space-y-1">
+                <li>combinações simples de alimentos que reduzem inflamação</li>
+                <li>bebidas detox ativadoras de GLP-1</li>
+                <li>lista de alimentos que “desligam” sua Akkermansia</li>
+              </ul>
+              <p className="text-gray-400 font-bold mt-3 line-through text-sm">Valor: R$ 39</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex items-center gap-2 mb-2">
+                 <span className="bg-brand-green text-white text-[10px] uppercase font-bold px-2 py-1 rounded tracking-wide">BÔNUS GRÁTIS</span>
+              </div>
+              <p className="font-bold text-xl text-brand-dark">🎁 Bônus #2 — Checklist diário da fábrica de GLP-1</p>
+              <p className="text-gray-600 mt-2">Um checklist simples que você imprime ou usa no celular para manter sua fábrica metabólica ligada todos os dias.</p>
+              <p className="font-bold text-sm text-gray-800 mt-3">Inclui:</p>
+              <ul className="list-disc pl-5 text-gray-600 text-sm space-y-1">
+                <li>hábitos de 30 segundos que ativam GLP-1</li>
+                <li>gatilhos que sabotam o metabolismo</li>
+                <li>rotina da manhã e da noite aprovada por especialistas</li>
+              </ul>
+              <p className="text-gray-400 font-bold mt-3 line-through text-sm">Valor: R$ 29</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex items-center gap-2 mb-2">
+                 <span className="bg-brand-green text-white text-[10px] uppercase font-bold px-2 py-1 rounded tracking-wide">BÔNUS GRÁTIS</span>
+              </div>
+              <p className="font-bold text-xl text-brand-dark">🎁 Bônus #3 — Receitas rápidas ativadoras de Akkermansia</p>
+              <p className="text-gray-600 mt-2">12 receitas fáceis e prontas em 10 minutos que alimentam suas novas colônias bacterianas.</p>
+              <p className="font-bold text-sm text-gray-800 mt-3">Inclui:</p>
+              <ul className="list-disc pl-5 text-gray-600 text-sm space-y-1">
+                <li>café da manhã “acelera GLP-1”</li>
+                <li>refeições de 1 panela</li>
+                <li>sobremesas low-guilt que não desativam seu metabolismo</li>
+              </ul>
+              <p className="text-gray-400 font-bold mt-3 line-through text-sm">Valor: R$ 57</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex items-center gap-2 mb-2">
+                 <span className="bg-brand-green text-white text-[10px] uppercase font-bold px-2 py-1 rounded tracking-wide">BÔNUS GRÁTIS</span>
+              </div>
+              <p className="font-bold text-xl text-brand-dark">🎁 Bônus #4 — Áudio de reprogramação da fome emocional (10 minutos)</p>
+              <p className="text-gray-600 mt-2">Um áudio curto que você escuta antes das refeições para reduzir compulsão, ansiedade e cravings por carboidratos.</p>
+              <p className="text-gray-600 mt-1">Criado com técnicas de respiração e regulação metabólica.</p>
+              <p className="text-gray-400 font-bold mt-3 line-through text-sm">Valor: R$ 47</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex items-center gap-2 mb-2">
+                 <span className="bg-brand-green text-white text-[10px] uppercase font-bold px-2 py-1 rounded tracking-wide">BÔNUS GRÁTIS</span>
+              </div>
+              <p className="font-bold text-xl text-brand-dark">🎁 Bônus #5 — Aulas privadas: metabolismo feminino depois dos 40</p>
+              <p className="text-gray-600 mt-2">Uma mini-aula exclusiva explicando o que realmente muda no corpo após os 40 — e como inverter tudo a seu favor.</p>
+              <p className="font-bold text-sm text-gray-800 mt-3">Inclui:</p>
+              <ul className="list-disc pl-5 text-gray-600 text-sm space-y-1">
+                <li>a verdade sobre menopausa e peso</li>
+                <li>o erro metabólico mais comum</li>
+                <li>como usar GLP-1 natural a seu favor</li>
+              </ul>
+              <p className="text-gray-400 font-bold mt-3 line-through text-sm">Valor: R$ 97</p>
+            </div>
+          </div>
+
+          <div className="text-center py-6">
+              <p className="font-black text-3xl text-brand-green">✅ Valor total dos bônus = R$269</p>
+              
+              <div className="mt-8 bg-brand-green p-6 rounded-2xl shadow-xl transform scale-105 border-4 border-green-400">
+                <p className="text-xl md:text-3xl font-black text-white text-center uppercase tracking-wide leading-tight">
+                  PORÉM LEVANDO HOJE O GLP RESET TODOS OS BÔNUS SÃO GRÁTIS
+                </p>
+              </div>
+          </div>
+
+          {/* MAIN PRODUCT */}
+          <div className="bg-white p-8 rounded-3xl shadow-2xl border border-gray-100 transform hover:scale-[1.02] transition-transform duration-300">
+            <div className="flex justify-center mb-6">
+                <Star className="text-brand-gold fill-brand-gold w-12 h-12" />
+            </div>
+            <p className="font-bold text-2xl mb-6 text-brand-dark text-center">IM GLP RESET – Fórmula Completa</p>
+            <ul className="space-y-4 mb-8 pl-2">
+                {[
+                    "Akkermansia muciniphila de grau farmacêutico",
+                    "10 ingredientes sinérgicos adicionais",
+                    "Produzido em ingredientes totalmente naturais pela FDA e certificada GMP",
+                    "Testado por terceiros para pureza e potência"
+                ].map((item, i) => (
+                    <li key={i} className="flex items-start gap-3 text-lg">
+                        <Check className="text-white bg-brand-green rounded-full p-0.5 mt-1 shrink-0" size={20}/>
+                        <span className="text-gray-700">{item}</span>
+                    </li>
+                ))}
+            </ul>
+            <div className="bg-gray-50 p-6 rounded-2xl text-center border border-gray-200">
+                <p className="font-black text-5xl text-brand-green mb-2">VALOR: R$ 37,00</p>
+            </div>
+            <div className="mt-8">
+               <button className="bg-brand-green hover:bg-green-600 text-white font-black text-xl md:text-2xl py-6 px-8 rounded-full shadow-xl w-full transition-all transform hover:scale-[1.02] flex items-center justify-center gap-2 animate-bounce">
+                  EU QUERO O GLP RESET <ArrowRight size={32} />
+               </button>
+            </div>
+          </div>
+
+          {/* COSTS, WARNING & CTA */}
+          <div className="mt-12 space-y-8 border-t border-gray-200 pt-12">
+            <div className="text-center space-y-4">
+              <p className="text-2xl text-center font-bold text-gray-800">Mas você não pagará nem perto disso hoje.</p>
+              <h3 className="text-2xl md:text-3xl font-black text-brand-dark">Sua inversão na sua nova fábrica metabólica</h3>
+              <p className="text-xl font-medium text-gray-700">Vamos falar do custo real da transformação metabólica.</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm text-center">
+               <p className="text-lg text-gray-700 mb-6">Essas injeções usadas por celebridades custam mais de <span className="font-bold text-red-600">R$ 3000,00 por mês</span>.</p>
+               
+               <div className="grid md:grid-cols-2 gap-4 text-center mb-6">
+                  <div className="bg-gray-50 p-4 rounded-xl">
+                    <p className="text-gray-500 text-sm uppercase font-bold">Custo Anual</p>
+                    <p className="text-2xl font-black text-gray-800">R$ 36 MIL</p>
+                  </div>
+                  <div className="bg-gray-50 p-4 rounded-xl">
+                    <p className="text-gray-500 text-sm uppercase font-bold">Em 5 Anos</p>
+                    <p className="text-2xl font-black text-gray-800">Mais de R$ 150 MIL</p>
+                  </div>
+               </div>
+
+               <p className="text-center mt-6 text-gray-700">
+                 E você fica presa se injetando para sempre, porque no momento em que para, <span className="font-bold">o peso volta imediatamente</span>.
+               </p>
+            </div>
+
+            <div className="bg-red-50 p-6 rounded-2xl border-l-8 border-red-500 shadow-sm">
+                <div className="space-y-3">
+                   {[
+                     "Paralisia estomacal permanente",
+                     "Episódios violentos de vômito",
+                     "Arrotos de ovo podre que esvaziam ambientes",
+                     "“Bumbum de Mounjaro” caído",
+                     "Complicações potenciais dignas de processo judicial"
+                   ].map((item, i) => (
+                     <li key={i} className="flex items-start gap-3 text-red-800 font-medium list-none">
+                        <span className="bg-red-200 text-red-800 rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">{i + 1}</span>
+                        <span>{item}</span>
+                     </li>
+                   ))}
+                </div>
+            </div>
+
+            <button className="bg-brand-green hover:bg-green-600 text-white font-black text-2xl md:text-3xl py-6 px-8 rounded-full shadow-2xl w-full transition-all transform hover:scale-[1.02] flex items-center justify-center gap-4 animate-bounce mt-8 hover:shadow-green-500/30">
+                QUERO AGORA <ArrowRight size={36} />
+            </button>
+
+            <div className="space-y-6 text-center text-lg md:text-xl text-gray-700 font-medium px-4">
+                <p>Mas o valor real não é o dinheiro que você economiza.</p>
+                <p>É recuperar a sua vida.</p>
+                <p>É poder comer carboidratos sem pânico.</p>
+                <p>É sentir-se confiante na própria pele outra vez.</p>
+                <p>É não ter que se injetar com hormônios experimentais.</p>
+                <p>É ter um metabolismo que funciona PARA você em vez de contra você.</p>
+                <p>Quanto vale isso para você?</p>
+                <p className="font-bold text-brand-dark text-2xl">A maioria das mulheres nos diz que não tem preço.</p>
+            </div>
+
+            <div className="bg-yellow-50 p-8 rounded-3xl border-4 border-yellow-400 shadow-xl relative mt-12">
+                <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-yellow-400 text-white px-6 py-2 rounded-full font-black uppercase tracking-wider text-sm shadow-lg">Advertência</div>
+                
+                <h4 className="text-xl md:text-2xl font-bold text-center text-gray-900 mb-6 mt-2">
+                    As grandes farmacêuticas se apressam para monopolizar este “segredo para um metabolismo magro” antes que você possa usá-lo
+                </h4>
+
+                <div className="space-y-4 text-gray-800 text-lg leading-relaxed">
+                    <p>Preciso te alertar sobre algo importante.</p>
+                    <p>Essa abordagem natural de GLP-1 ainda está passando despercebida.</p>
+                    <p>A indústria de injeções de 15 bilhões de dólares não quer que você saiba sobre essa alternativa.</p>
+                    <p>Porque uma vez que se espalhe a notícia de que você pode reativar sua própria fábrica de GLP-1 naturalmente…</p>
+                    <p className="font-bold">Todo o modelo de negócios deles desmorona.</p>
+                    <p>Neste momento, estamos na fase dos “adotantes iniciais”.</p>
+                    <p>Mas isso está mudando rápido.</p>
+                    <p>As grandes empresas farmacêuticas estão começando a perceber.</p>
+                    <p>Já estão trabalhando em maneiras de patentear e controlar esse processo natural.</p>
+                    <p>Algumas estão tentando criar versões sintéticas pelas quais podem cobrar preços de nível de injeção.</p>
+                    <p>Quando conseguirem, essa abordagem natural poderá se tornar muito mais difícil de acessar.</p>
+                    <p className="font-bold text-red-600">Ou muito mais cara.</p>
+                    <p>Já estamos vendo pressão na cadeia de suprimentos da cepa específica de Akkermansia que usamos.</p>
+                    <p>Nossos preços atuais refletem o fato de que ainda podemos obter esses ingredientes como uma empresa pequena e independente.</p>
+                    <p>Mas conforme a demanda cresce e a Big Pharma se envolve…</p>
+                    <p className="font-bold">Esses dias estão contados.</p>
+                    <p>As mulheres que transformarem seu metabolismo este ano serão as sortudas.</p>
+                    <p>Terão vencido o sistema antes que o sistema as alcance.</p>
+                    <p className="font-bold text-brand-dark">Não deixe essa oportunidade passar.</p>
+                    <p>Em cinco anos, você estará agradecendo por ter tomado ação hoje…</p>
+                    <p className="font-bold text-brand-dark">Ou se culpando por ter esperado até que fosse tarde demais.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* --- GUARANTEE --- */}
+      <section className="py-12 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <div className="bg-yellow-50 border-4 border-yellow-400 p-8 md:p-10 rounded-3xl text-center space-y-6 shadow-xl relative overflow-hidden">
+             <div className="absolute -top-6 -left-6 bg-yellow-400 text-white p-6 rotate-[-10deg] shadow-lg hidden md:block">
+                 <ShieldCheck size={48} />
+             </div>
+            <h3 className="text-2xl md:text-3xl font-black text-gray-900 leading-tight">
+                Sua Garantia de “Ressurreição Metabólica”: Transforme Seu Metabolismo Em 7 Dias… ou seja TOTALMENTE REEMBOLSADO SEM PERGUNTAS
+            </h3>
+            <p className="text-lg">Estou tão confiante de que IM GLP Reset vai reativar sua fábrica natural de GLP-1…</p>
+            <p className="text-lg">Que estou colocando minha reputação em jogo:</p>
+            <div className="bg-white/80 p-6 rounded-xl border border-yellow-200 shadow-sm">
+                <p className="font-bold">Use IM GLP Reset por 7 dias.</p>
+                <p>Siga as instruções.</p>
+                <p>Veja seu metabolismo funcionar como o das mulheres naturalmente magras.</p>
+                <p>Sinta sua energia aumentar.</p>
+                <p>Veja os números na balança mudarem.</p>
+            </div>
+            <div className="space-y-2">
+                <p>Se você não estiver totalmente encantada com sua transformação…</p>
+                <p>Se não sentir mais controle sobre seu peso do que sentiu em anos…</p>
+                <p>Se não estiver satisfeita por QUALQUER razão…</p>
+            </div>
+            <div className="font-bold text-lg text-gray-800">
+                <p>Envie um email dentro dos 7 dias.</p>
+                <p>Reembolsamos cada centavo.</p>
+                <p>Sem perguntas.</p>
+                <p>Sem formulários.</p>
+                <p>Sem obstáculos.</p>
+            </div>
+            <p className="font-bold text-brand-dark text-xl">E você ainda fica com as garrafas como presente por ter tentado.</p>
+            <p className="text-sm uppercase tracking-[0.2em] text-gray-500 font-bold">Zero risco.</p>
+            <p className="font-black text-2xl">O único risco é ficar onde está.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* --- FINAL CHOICE --- */}
+      <section className="py-16 bg-gray-50 border-t border-gray-200">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-8">
+          <h3 className="text-2xl md:text-3xl font-bold text-center text-brand-dark mb-8">
+            Você Estará de Dieta Ano Que Vem… Ou Finalmente Vai Comer Carboidratos Sem Culpa?
+          </h3>
+
+          <p className="text-center text-lg">Neste momento, você está em uma encruzilhada.</p>
+          
+          <div className="grid gap-12 md:gap-8 md:grid-cols-2 pt-6">
+              {/* PATH A */}
+              <div className="bg-white p-6 rounded-2xl shadow-lg border-t-8 border-red-500 hover:shadow-2xl transition-shadow relative">
+                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-red-500 text-white px-4 py-1 rounded-full text-xs font-bold uppercase">Opção Arriscada</div>
+                  <p className="font-black text-xl text-red-600 mb-4 text-center mt-2">CAMINHO A: NÃO FAZER NADA</p>
+                  <img 
+                    src="https://go.imfitgirl.com/hosted/images/cc/65266d573148cd908a9fa3d27e367e/67.jpg" 
+                    alt="Path A" 
+                    className="rounded-lg shadow mb-6 w-full grayscale opacity-80"
+                  />
+                  <ul className="space-y-3">
+                    {[
+                        "Continuar lutando com o peso ano após ano",
+                        "Continuar sentindo culpa ao comer carboidratos",
+                        "Ver mulheres naturalmente magras curtirem a vida enquanto você sofre",
+                        "Gastar milhares em programas ineficazes",
+                        "Talvez acabar em injeções perigosas de R$ 15.000 por ano",
+                        "Viver com um metabolismo “quebrado” para sempre"
+                    ].map((item, i) => (
+                        <li key={i} className="flex items-start gap-2 text-sm text-gray-600">
+                             <XCircle className="text-red-400 shrink-0 mt-0.5" size={16} />
+                             <span>{item}</span>
+                        </li>
+                    ))}
+                  </ul>
+              </div>
+
+              {/* PATH B */}
+              <div className="bg-white p-6 rounded-2xl shadow-xl border-t-8 border-green-500 transform md:scale-105 ring-4 ring-green-50 relative">
+                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-4 py-1 rounded-full text-xs font-bold uppercase animate-pulse">Recomendado</div>
+                  <p className="font-black text-xl text-green-600 mb-4 text-center mt-2">CAMINHO B: REATIVAR SUA FÁBRICA DE GLP-1</p>
+                  <img 
+                    src="https://go.imfitgirl.com/hosted/images/0b/04806b447d44c9b89dfe7953709476/66.jpg" 
+                    alt="Path B" 
+                    className="rounded-lg shadow mb-6 w-full"
+                  />
+                  <ul className="space-y-3">
+                    {[
+                        "Instalar a mesma vantagem metabólica das mulheres naturalmente magras",
+                        "Comer carboidratos sem engordar",
+                        "Sentir-se confiante e cheia de energia",
+                        "Economizar milhares comparado a opções farmacêuticas",
+                        "Evitar efeitos colaterais perigosos",
+                        "Transformar sua relação com comida para sempre"
+                    ].map((item, i) => (
+                        <li key={i} className="flex items-start gap-2 text-sm text-gray-800 font-medium">
+                             <CheckCircle2 className="text-green-500 shrink-0 mt-0.5" size={16} />
+                             <span>{item}</span>
+                        </li>
+                    ))}
+                  </ul>
+              </div>
+          </div>
+
+          <div className="text-center space-y-4 pt-8">
+            <p className="font-bold text-2xl text-brand-dark">A escolha é óbvia.</p>
+            <p className="text-lg">Mas precisa ser tomada AGORA.</p>
+            <p>Seu metabolismo não vai se consertar sozinho.</p>
+            <p>Akkermansia está esperando para ser reativada.</p>
+            <p>Sua fábrica natural de GLP-1 está pronta para funcionar novamente.</p>
+            <p>Sua transformação está a um clique de distância.</p>
+            <p>Não deixe que medo, dúvida ou procrastinação roubem mais um ano da sua vida.</p>
+            <div className="flex flex-col gap-2 pt-4">
+                <p className="font-bold text-brand-green text-xl">Escolha seu caminho.</p>
+                <p className="font-bold text-brand-green text-xl">Escolha transformação.</p>
+                <p className="font-bold text-brand-green text-xl">Escolha finalmente ter o metabolismo que você merece.</p>
+            </div>
+          </div>
+
+          <button className="bg-brand-green hover:bg-green-600 text-white font-black text-2xl md:text-3xl py-6 px-8 rounded-full shadow-2xl w-full transition-all transform hover:scale-[1.02] flex items-center justify-center gap-4 animate-bounce mt-8 hover:shadow-green-500/30">
+             EU QUERO O GLP RESET <ArrowRight size={36} />
+          </button>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 bg-white border-t border-gray-200">
+        <div className="max-w-2xl mx-auto px-4">
+          <h3 className="text-2xl font-bold text-center mb-8 text-brand-dark">Perguntas Frequentes</h3>
+          <div className="space-y-3">
+            <FAQItem 
+              question="Preciso de receita médica para usar o IM GLP Reset?"
+              answer="Não. O IM GLP Reset é uma fórmula 100% natural baseada em probióticos e nutrientes que já existem no seu corpo ou na natureza. Não é um medicamento farmacêutico, portanto não exige receita e não possui os efeitos colaterais das injeções."
+            />
+            <FAQItem 
+              question="Isso vai funcionar se eu já passei da menopausa?"
+              answer="Sim! A fórmula foi desenvolvida especificamente pensando nas mudanças hormonais e metabólicas que ocorrem após os 40 anos e na menopausa, quando a bactéria Akkermansia tende a desaparecer naturalmente."
+            />
+            <FAQItem 
+              question="Tenho que fazer dieta restritiva junto?"
+              answer="Não. O objetivo de reativar sua 'Fábrica Magra' é permitir que seu corpo processe carboidratos e calorias de forma eficiente, como as pessoas naturalmente magras, sem a necessidade de dietas de fome."
+            />
+            <FAQItem 
+              question="Como devo tomar o IM GLP Reset?"
+              answer="É uma rotina simples de 30 segundos. Basta seguir a receita matinal fornecida no guia para ativar as bactérias e nutrir sua flora intestinal."
+            />
+            <FAQItem 
+              question="E se não funcionar para mim?"
+              answer="Você está coberta pela nossa garantia de 7 dias. Se você não sentir a diferença na sua energia e metabolismo, basta nos enviar um email e devolveremos 100% do seu dinheiro, sem perguntas."
+            />
+          </div>
+        </div>
+      </section>
+
+    </div>
+  );
+};
+
+const FAQItem: React.FC<{ question: string; answer: string }> = ({ question, answer }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  return (
+    <div className="border border-gray-200 rounded-xl bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+      <button 
+        onClick={() => setIsOpen(!isOpen)}
+        className="w-full flex justify-between items-center p-5 text-left font-bold text-gray-800 hover:bg-gray-50"
+      >
+        <span className="pr-4">{question}</span>
+        {isOpen ? <ChevronUp className="text-brand-green shrink-0" /> : <ChevronDown className="text-gray-400 shrink-0" />}
+      </button>
+      {isOpen && (
+        <div className="p-5 pt-0 text-gray-600 border-t border-gray-50 bg-gray-50 text-base leading-relaxed">
+          {answer}
+        </div>
+      )}
+    </div>
+  );
+}
+
+export default LandingPage;
