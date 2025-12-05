@@ -743,7 +743,7 @@ const LandingPage: React.FC = () => {
                 ))}
             </ul>
             <div className="bg-gray-50 p-6 rounded-2xl text-center border border-gray-200">
-                <p className="font-black text-5xl text-brand-green mb-2">VALOR: R$ 37,00</p>
+                <p className="font-black text-5xl text-[#27ae60] mb-2">VALOR: R$ 37,00</p>
             </div>
             <div className="mt-8">
                <button className="bg-brand-green hover:bg-green-600 text-white font-black text-xl md:text-2xl py-6 px-8 rounded-full shadow-xl w-full transition-all transform hover:scale-[1.02] flex items-center justify-center gap-2 animate-bounce">
