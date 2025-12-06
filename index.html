@@ -195,7 +195,7 @@
               >
                 {data.map((item, index) => (
                   <div key={index} className="min-w-full flex flex-col">
-                    <img src={item.img} alt="Depoimento" className="w-full h-64 object-cover" />
+                    <img src={item.img} alt="Depoimento" className="w-full h-auto" />
                     <div className="p-6">
                       <div className="flex gap-1 mb-2">
                         {[...Array(5)].map((_, i) => (
@@ -234,7 +234,6 @@
         }, []);
 
         return (
-          // ESTATICA: Sem classes de fixação. Rola com o site.
           <div className="bg-brand-red text-white py-3 px-4 text-center font-bold text-sm md:text-base shadow-md w-full">
             <p>
               ATENÇÃO : Devido a grande pressão da indústria farmacêutica esse site irá sair do ar no dia <span className="text-brand-gold uppercase underline decoration-2 underline-offset-2">{today}</span> aproveite !
@@ -266,7 +265,9 @@
 
       // --- COMPONENTE LANDING PAGE ---
       const LandingPage = () => {
-        const checkoutUrl = "https://pay.kirvano.com/9b26f169-6065-4e61-8e10-6a37b66e397f";
+        const handleCheckout = () => {
+          window.location.href = "https://pay.kirvano.com/9b26f169-6065-4e61-8e10-6a37b66e397f";
+        };
 
         return (
           <div className="font-sans text-gray-900 bg-white selection:bg-brand-red selection:text-white">
