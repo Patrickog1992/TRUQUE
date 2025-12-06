@@ -164,6 +164,65 @@
         );
       };
 
+      // --- COMPONENTE: TESTIMONIALS CAROUSEL ---
+      const Testimonials = () => {
+        const data = [
+          { img: "https://i.imgur.com/ipOh27y.jpg", text: "Eu não acreditava que algo natural pudesse funcionar tão bem. Perdi 8kg no primeiro mês sem passar fome! Me sinto renovada." },
+          { img: "https://i.imgur.com/AJCfcXk.jpg", text: "Minha energia voltou e o inchaço sumiu na primeira semana. Finalmente entrei naquele jeans antigo que estava guardado há anos." },
+          { img: "https://i.imgur.com/BTYdqvQ.jpg", text: "Depois dos 40, nada funcionava. O GLP Reset foi a única coisa que destravou meu metabolismo. Recomendo para todas as minhas amigas." },
+          { img: "https://i.imgur.com/TAUXKtX.jpg", text: "Me sinto outra mulher. Mais leve, mais disposta e sem aquela compulsão por doces que me sabotava sempre." },
+          { img: "https://i.imgur.com/S5Aj7OJ.jpg", text: "Simplesmente incrível. É fácil de seguir e os resultados são visíveis em poucas semanas. Minha pele também melhorou muito!" }
+        ];
+
+        const [curr, setCurr] = useState(0);
+
+        useEffect(() => {
+          const timer = setInterval(() => {
+            setCurr((c) => (c === data.length - 1 ? 0 : c + 1));
+          }, 4000);
+          return () => clearInterval(timer);
+        }, []);
+
+        return (
+          <div className="py-10 w-full max-w-xl mx-auto px-4">
+            <h3 className="text-2xl font-bold text-center text-brand-dark mb-8">
+               VEJA O DEPOIMENTO DE ALGUMAS MULHERES QUE FIZERAM O GLP RESET
+            </h3>
+            <div className="relative overflow-hidden rounded-2xl shadow-xl bg-white border border-gray-100">
+              <div 
+                className="flex transition-transform duration-500 ease-out" 
+                style={{ transform: `translateX(-${curr * 100}%)` }}
+              >
+                {data.map((item, index) => (
+                  <div key={index} className="min-w-full flex flex-col">
+                    <img src={item.img} alt="Depoimento" className="w-full h-64 object-cover" />
+                    <div className="p-6">
+                      <div className="flex gap-1 mb-2">
+                        {[...Array(5)].map((_, i) => (
+                          <Star key={i} size={16} className="text-yellow-400 fill-yellow-400" />
+                        ))}
+                      </div>
+                      <p className="text-gray-700 italic font-medium">"{item.text}"</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              
+              <div className="absolute bottom-4 right-0 left-0">
+                <div className="flex items-center justify-center gap-2">
+                  {data.map((_, i) => (
+                    <div 
+                      key={i} 
+                      className={`transition-all w-2 h-2 bg-white rounded-full ${curr === i ? "p-1" : "bg-opacity-50"}`} 
+                    />
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+      };
+
       // --- COMPONENTE TOP BAR (ESTÁTICA) ---
       const TopBar = () => {
         const [today, setToday] = useState("");
@@ -175,6 +234,7 @@
         }, []);
 
         return (
+          // ESTATICA: Sem classes de fixação. Rola com o site.
           <div className="bg-brand-red text-white py-3 px-4 text-center font-bold text-sm md:text-base shadow-md w-full">
             <p>
               ATENÇÃO : Devido a grande pressão da indústria farmacêutica esse site irá sair do ar no dia <span className="text-brand-gold uppercase underline decoration-2 underline-offset-2">{today}</span> aproveite !
@@ -206,7 +266,7 @@
 
       // --- COMPONENTE LANDING PAGE ---
       const LandingPage = () => {
-        const checkoutLink = "https://pay.kirvano.com/9b26f169-6065-4e61-8e10-6a37b66e397f";
+        const checkoutUrl = "https://pay.kirvano.com/9b26f169-6065-4e61-8e10-6a37b66e397f";
 
         return (
           <div className="font-sans text-gray-900 bg-white selection:bg-brand-red selection:text-white">
@@ -963,6 +1023,9 @@
                     </a>
                   </div>
                 </div>
+
+                {/* TESTIMONIAL CAROUSEL */}
+                <Testimonials />
 
                 {/* COSTS, WARNING & CTA */}
                 <div className="mt-12 space-y-8 border-t border-gray-200 pt-12">
